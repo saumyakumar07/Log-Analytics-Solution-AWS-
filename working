@@ -1,0 +1,16 @@
+# Project Description
+
+## Overview
+This project is a log analytic solution built on AWS services. It leverages various AWS services such as Amazon Kinesis Data Firehose, Amazon Managed Service for Apache Flink, Amazon S3, Amazon OpenSearch Service, and Kibana to provide a robust log analysis solution.
+
+## How It Works
+1. **Data Collection**: Set up a Kinesis Agent to continuously collect data from various data sources and send it to Amazon Kinesis Data Firehose.
+
+2. **Data Processing Pipeline**: Create an end-to-end delivery stream in Amazon Kinesis Data Firehose to transmit data from the agent to destinations, including Amazon Managed Service for Apache Flink, Amazon OpenSearch Service, and Amazon S3. The processing pipeline involves using SQL queries in AWS for Apache Flink to process incoming log data.
+
+3. **Load Processed Data**: Load processed data from Amazon Kinesis Data Analytics to Amazon OpenSearch Service for indexing the data.
+
+4. **Data Analysis and Visualization**: Analyze and visualize the processed data using Kibana, which is integrated with Amazon OpenSearch Service for efficient log analysis and visualization.
+
+## License
+This project is licensed under the [MIT License](LICENSE).
